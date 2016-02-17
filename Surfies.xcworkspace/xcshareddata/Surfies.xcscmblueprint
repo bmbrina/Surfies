@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A214D79737CA0C6604BF69E40CD999908EF4BE3B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A214D79737CA0C6604BF69E40CD999908EF4BE3B" : 0,
+    "3AF18F9C6F5D633BAA0B3F935459E0C777C82047" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E6DC4BE7-5669-43D0-85E1-6B4014F74E68",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A214D79737CA0C6604BF69E40CD999908EF4BE3B" : "Surfies",
+    "3AF18F9C6F5D633BAA0B3F935459E0C777C82047" : "Surfies\/SnapKit"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Surfies",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Surfies.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SnapKit\/SnapKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3AF18F9C6F5D633BAA0B3F935459E0C777C82047"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/bmbrina\/surfies.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A214D79737CA0C6604BF69E40CD999908EF4BE3B"
+    }
+  ]
+}

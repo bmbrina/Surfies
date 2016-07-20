@@ -42,13 +42,13 @@ let WithGenres = "with_genres"
 
 //TvShows TMDB
 
-let TMDb_GetPopular_Url = "http://api.themoviedb.org/3/tv/popular"
+let TMDb_GetPopular_Url = "https://api.themoviedb.org/3/tv/popular"
 let TMDb_ApiKeyValue = "2b12f30ddefca3e200e391da445583c0"
-let TMDb_ImageUrl = "http://image.tmdb.org/t/p/w500"
-let TMDb_GetShowInfoBy_Url = "http://api.themoviedb.org/3/tv/"
-let TMDb_SearchTVShow_Url = "http://api.themoviedb.org/3/search/tv"
-let TMDb_DiscoverWithGenres_Url = "http://api.themoviedb.org/3/discover/tv"
-let TMDb_AiringToday_Url = "http://api.themoviedb.org/3/tv/airing_today"
+let TMDb_ImageUrl = "https://image.tmdb.org/t/p/w500"
+let TMDb_GetShowInfoBy_Url = "https://api.themoviedb.org/3/tv/"
+let TMDb_SearchTVShow_Url = "https://api.themoviedb.org/3/search/tv"
+let TMDb_DiscoverWithGenres_Url = "https://api.themoviedb.org/3/discover/tv"
+let TMDb_AiringToday_Url = "https://api.themoviedb.org/3/tv/airing_today"
 
 //Moods
 let Exciting = [12,28] //Adventure & Action

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2955AF05CDF44737D8853EA3'
+               BlueprintIdentifier = '893496CE9B57EB5B1AFD152232D39E62'
                BlueprintName = 'JDFTooltips'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'JDFTooltips.framework'>

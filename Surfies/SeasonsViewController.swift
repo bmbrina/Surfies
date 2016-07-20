@@ -67,7 +67,7 @@ class SeasonsViewController: UIViewController, UICollectionViewDataSource, UICol
         
         collectionViewLayout.minimumLineSpacing = collectionViewLayout.sectionInset.left
         
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: "goBack:")
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(SeasonsViewController.goBack(_:)))
         rightSwipe.direction = .Right
         
         view.addGestureRecognizer(rightSwipe)
@@ -80,7 +80,7 @@ class SeasonsViewController: UIViewController, UICollectionViewDataSource, UICol
         
         self.navigationItem.setHidesBackButton(true, animated: false)
         
-        let backButton = UIBarButtonItem(image: UIImage(named: "Back"), style: UIBarButtonItemStyle.Plain, target: self, action: "didSelectBack")
+        let backButton = UIBarButtonItem(image: UIImage(named: "Back"), style: UIBarButtonItemStyle.Plain, target: self, action: #selector(SeasonsViewController.didSelectBack))
         self.navigationItem.leftBarButtonItem = backButton
         
         styleMenu()

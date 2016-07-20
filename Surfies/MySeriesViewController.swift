@@ -122,7 +122,7 @@ class MySeriesViewController: UIViewController, UICollectionViewDataSource, UICo
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("seriesCell", forIndexPath: indexPath) as! SeriesPosterCollectionViewCell
         let showPosterUrl = series[indexPath.row].posterURL
         cell.seriePoster.sd_setImageWithURL(showPosterUrl, placeholderImage: UIImage(named: "nopreview"))
-        let longPress: UIGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "action:")
+        let longPress: UIGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(MySeriesViewController.action(_:)))
         cell.addGestureRecognizer(longPress)
         
         return cell

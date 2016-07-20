@@ -82,7 +82,7 @@ class SelectedEpisodeViewController: UIViewController {
             }
         }
 
-        watchedEpisode.addTarget(self, action: Selector("tapped:"), forControlEvents: .TouchUpInside)
+        watchedEpisode.addTarget(self, action: #selector(SelectedEpisodeViewController.tapped(_:)), forControlEvents: .TouchUpInside)
         
         addGradient()
         addGradienToTextView()
@@ -108,7 +108,7 @@ class SelectedEpisodeViewController: UIViewController {
             }
         }
         
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: "goBack:")
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(SelectedEpisodeViewController.goBack(_:)))
         rightSwipe.direction = .Right
         
         view.addGestureRecognizer(rightSwipe)
@@ -121,7 +121,7 @@ class SelectedEpisodeViewController: UIViewController {
         
         self.navigationItem.setHidesBackButton(true, animated: false)
         
-        let backButton = UIBarButtonItem(image: UIImage(named: "Back"), style: UIBarButtonItemStyle.Plain, target: self, action: "didSelectBack")
+        let backButton = UIBarButtonItem(image: UIImage(named: "Back"), style: UIBarButtonItemStyle.Plain, target: self, action: #selector(SelectedEpisodeViewController.didSelectBack))
         self.navigationItem.leftBarButtonItem = backButton
         
         

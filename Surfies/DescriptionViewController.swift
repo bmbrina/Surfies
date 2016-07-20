@@ -61,7 +61,7 @@ class DescriptionViewController: UIViewController, UIViewControllerTransitioning
 
         descriptionView.layer.cornerRadius = 10
         
-        saveButton.addTarget(self, action: Selector("tapped:"), forControlEvents: .TouchUpInside)
+        saveButton.addTarget(self, action: #selector(DescriptionViewController.tapped(_:)), forControlEvents: .TouchUpInside)
         
         if let currentShow = currentShow {
             

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '65C2A82E33C379C0AD406CEE'
+               BlueprintIdentifier = 'B39441E1E70A304C9DFC7B70D1E4E5A0'
                BlueprintName = 'APAvatarImageView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'APAvatarImageView.framework'>

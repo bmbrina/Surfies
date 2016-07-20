@@ -40,7 +40,7 @@ class AiringTodayViewController: UIViewController, UITableViewDelegate, UITableV
             }
         }
         
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: "goBack:")
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(AiringTodayViewController.goBack(_:)))
         rightSwipe.direction = .Right
         
         view.addGestureRecognizer(rightSwipe)
@@ -52,7 +52,7 @@ class AiringTodayViewController: UIViewController, UITableViewDelegate, UITableV
         
         self.navigationItem.setHidesBackButton(true, animated: false)
         
-        let backButton = UIBarButtonItem(image: UIImage(named: "Back"), style: UIBarButtonItemStyle.Plain, target: self, action: "didSelectBack")
+        let backButton = UIBarButtonItem(image: UIImage(named: "Back"), style: UIBarButtonItemStyle.Plain, target: self, action: #selector(AiringTodayViewController.didSelectBack))
         self.navigationItem.leftBarButtonItem = backButton
         
     }

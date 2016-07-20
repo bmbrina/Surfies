@@ -67,7 +67,7 @@ class EpisodesViewController: UIViewController, UICollectionViewDataSource, UICo
         
         collectionViewLayout.minimumLineSpacing = collectionViewLayout.sectionInset.left
         
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: "goBack:")
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(EpisodesViewController.goBack(_:)))
         rightSwipe.direction = .Right
         
         view.addGestureRecognizer(rightSwipe)
@@ -79,7 +79,7 @@ class EpisodesViewController: UIViewController, UICollectionViewDataSource, UICo
         
         self.navigationItem.setHidesBackButton(true, animated: false)
         
-        let backButton = UIBarButtonItem(image: UIImage(named: "Back"), style: UIBarButtonItemStyle.Plain, target: self, action: "didSelectBack")
+        let backButton = UIBarButtonItem(image: UIImage(named: "Back"), style: UIBarButtonItemStyle.Plain, target: self, action: #selector(EpisodesViewController.didSelectBack))
         self.navigationItem.leftBarButtonItem = backButton
 
         

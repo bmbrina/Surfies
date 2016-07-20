@@ -13,8 +13,6 @@ import FBSDKLoginKit
 import Parse
 import ParseFacebookUtilsV4
 
-
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -34,7 +32,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UserSavedShows.registerSubclass()
         UserWatchedEpisodes.registerSubclass()
         
-        Parse.setApplicationId("L1zBYLMUkyZgU53oWPhGlqwtyWOq2nkQCTRjVSVk", clientKey: "Jvi1n8eal8E8O7ofvN8l5hAQNnBJMPYUy6TAyH1I")
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "L1zBYLMUkyZgU53oWPhGlqwtyWOq2nkQCTRjVSVk"
+            $0.clientKey = "Jvi1n8eal8E8O7ofvN8l5hAQNnBJMPYUy6TAyH1I"
+            $0.server = "http://localhost:1337/parse"
+        }
+        Parse.initializeWithConfiguration(configuration)
         
         //Facebook
         PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)

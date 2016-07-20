@@ -97,7 +97,7 @@ class RecommendationViewController: UIViewController, AKPickerViewDataSource, AK
         
         view.addSubview(seriesPosters)
     
-        let leftSwipe = UISwipeGestureRecognizer(target: self, action: "showAiringToday:")
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(RecommendationViewController.showAiringToday(_:)))
         leftSwipe.direction = .Left
         
         view.addGestureRecognizer(leftSwipe)
@@ -112,7 +112,7 @@ class RecommendationViewController: UIViewController, AKPickerViewDataSource, AK
         definesPresentationContext = true
         searchController.searchBar.delegate = self
         
-        searchButton = UIBarButtonItem(image: UIImage(named: "Search"), style: UIBarButtonItemStyle.Plain, target: self, action: "userDidSelectSearch")
+        searchButton = UIBarButtonItem(image: UIImage(named: "Search"), style: UIBarButtonItemStyle.Plain, target: self, action: #selector(RecommendationViewController.userDidSelectSearch))
         searchButton?.tintColor = UIColor.lightGrayColor()
         
         let textFieldInsideSearchBar = searchController.searchBar.valueForKey("searchField") as? UITextField
@@ -244,11 +244,11 @@ class RecommendationViewController: UIViewController, AKPickerViewDataSource, AK
        
         tempView!.addSubview(bg)
         
-        let doubleTap = UITapGestureRecognizer(target: self, action: "action:")
+        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(RecommendationViewController.action(_:)))
         doubleTap.numberOfTapsRequired = 2
         tempView!.addGestureRecognizer(doubleTap)
         
-        let longPress = UILongPressGestureRecognizer(target: self, action: "action2:")
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(RecommendationViewController.action2(_:)))
         tempView!.addGestureRecognizer(longPress)
         
         tempView!.tag = index

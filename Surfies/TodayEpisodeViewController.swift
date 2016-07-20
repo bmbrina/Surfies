@@ -32,14 +32,14 @@ class TodayEpisodeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        watchedButton.addTarget(self, action: Selector("tapped:"), forControlEvents: .TouchUpInside)
+        watchedButton.addTarget(self, action: #selector(TodayEpisodeViewController.tapped(_:)), forControlEvents: .TouchUpInside)
         
         addGradient()
         addGradienToTextView()
         
         episodeDescription.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 65, right: 0)
         
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: "goBack:")
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(TodayEpisodeViewController.goBack(_:)))
         
         rightSwipe.direction = .Right
         
@@ -53,7 +53,7 @@ class TodayEpisodeViewController: UIViewController {
         
         self.navigationItem.setHidesBackButton(true, animated: false)
         
-        let backButton = UIBarButtonItem(image: UIImage(named: "Back"), style: UIBarButtonItemStyle.Plain, target: self, action: "didSelectBack")
+        let backButton = UIBarButtonItem(image: UIImage(named: "Back"), style: UIBarButtonItemStyle.Plain, target: self, action: #selector(TodayEpisodeViewController.didSelectBack))
         
         self.navigationItem.leftBarButtonItem = backButton
         

@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let configuration = ParseClientConfiguration {
             $0.applicationId = "L1zBYLMUkyZgU53oWPhGlqwtyWOq2nkQCTRjVSVk"
             $0.clientKey = "Jvi1n8eal8E8O7ofvN8l5hAQNnBJMPYUy6TAyH1I"
-            $0.server = "http://localhost:1337/parse"
+            $0.server = "https://obscure-waters-20543.herokuapp.com/parse"
         }
         Parse.initializeWithConfiguration(configuration)
         
